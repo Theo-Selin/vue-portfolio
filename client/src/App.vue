@@ -1,8 +1,9 @@
-<script setup>
-</script>
-
 <template>
   <main>
-    <p class="text-blue-500">Hello world</p>
+    <Navbar />
   </main>
 </template>
+
+<script setup>
+import Navbar from "./components/Navbar.vue";
+</script>
