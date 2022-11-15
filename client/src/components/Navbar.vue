@@ -12,9 +12,9 @@
       </div>
       <div class="hidden flex-1 items-center justify-center space-x-8 md:flex">
         <a href="/" class="headerLink">Home</a>
-        <a href="/" class="headerLink">Explore</a>
-        <a href="/" class="headerLink">Support</a>
-        <a href="/" class="headerLink">Business</a>
+        <a href="/" class="headerLink">About</a>
+        <a href="/" class="headerLink">Portfolio</a>
+        <a href="/" class="headerLink">Contact</a>
       </div>
       <div class="flex items-center justify-center space-x-4 md:w-1/5">
         <a href="/">
