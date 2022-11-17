@@ -1,35 +1,38 @@
 <template>
   <main>
     <div
-      class="fixed top-0 z-30 flex w-full items-center justify-between bg-white p-4"
+      class="fixed top-0 z-50 flex w-full items-center justify-between bg-white p-4"
     >
-      <div class="flex justify-center md:w-1/5">
-        <a href="/">
+      <div class="flex items-center justify-center space-x-4 md:w-1/5">
+        <a href="https://www.linkedin.com/in/theo-selin/" target="_blank">
           <div class="relative cursor-pointer">
-            <font-awesome-icon icon="fa-solid fa-ghost" class="headerIcon" />
+            <font-awesome-icon
+              icon="fa-brands fa-linkedin"
+              class="headerIcon"
+            />
+          </div>
+        </a>
+        <a href="https://github.com/Theo-Selin" target="_blank">
+          <div class="relative cursor-pointer">
+            <font-awesome-icon icon="fa-brands fa-github" class="headerIcon" />
           </div>
         </a>
       </div>
       <div class="hidden flex-1 items-center justify-center space-x-8 md:flex">
-        <a href="/" class="headerLink">Home</a>
-        <a href="/" class="headerLink">About</a>
-        <a href="/" class="headerLink">Portfolio</a>
-        <a href="/" class="headerLink">Contact</a>
+        <router-link to="/" class="headerLink">Home</router-link>
+        <router-link to="/about" class="headerLink">About</router-link>
+        <router-link to="/" class="headerLink">Portfolio</router-link>
+        <router-link to="/" class="headerLink">Contact</router-link>
       </div>
-      <div class="flex items-center justify-center space-x-4 md:w-1/5">
-        <a href="/">
-          <div class="relative cursor-pointer">
-            <font-awesome-icon icon="fa-solid fa-gamepad" class="headerIcon" />
-          </div>
-        </a>
-        <a href="/">
-          <div class="relative cursor-pointer">
-            <font-awesome-icon icon="fa-solid fa-dice-d6" class="headerIcon" />
-          </div>
-        </a>
+      <div class="flex justify-center md:w-1/5">
+        <div class="relative cursor-pointer z-50">
+          <Dropdown />
+        </div>
       </div>
     </div>
   </main>
 </template>
 
-<script></script>
+<script setup>
+import Dropdown from "./Dropdown.vue";
+</script>

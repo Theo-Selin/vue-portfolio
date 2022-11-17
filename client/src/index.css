@@ -5,7 +5,16 @@
 @tailwind utilities;
 
 @layer base {
-
+  /* For Webkit-based browsers (Chrome, Safari and Opera) */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* For IE, Edge and Firefox */
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 }
 
 @layer components {
@@ -14,6 +23,10 @@
     }
 
     .headerIcon {
-        @apply opacity-80 transition hover:opacity-100
+        @apply opacity-80 transition hover:opacity-100 text-3xl md:text-2xl
+    }
+
+    .link {
+        @apply relative cursor-pointer text-lg font-medium before:absolute before:inset-x-0 before:-bottom-1.5 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-black before:transition-all before:duration-200 hover:before:scale-x-100;
     }
 }
