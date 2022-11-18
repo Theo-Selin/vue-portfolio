@@ -1,7 +1,7 @@
 <template>
   <main>
     <div
-      class="fixed top-0 z-50 flex w-full items-center justify-between bg-white p-4"
+      class="fixed top-0 z-50 flex w-full items-center justify-between bg-[#E7ECEE] p-4"
     >
       <div class="flex items-center justify-center space-x-4 md:w-1/5">
         <a href="https://www.linkedin.com/in/theo-selin/" target="_blank">

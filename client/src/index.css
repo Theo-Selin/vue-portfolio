@@ -15,6 +15,10 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
+
+  #container {
+    @apply bg-gradient-to-t from-white to-[#E7ECEE] h-[200vh]
+  }
 }
 
 @layer components {

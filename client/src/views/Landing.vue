@@ -33,7 +33,7 @@
       <div
         class="relative h-[450px] w-full transition-all duration-500 md:inline lg:h-[800px] lg:w-[500px]"
       >
-        <img src="../assets/landing.png" layout="fill" objectFit="contain" />
+        <img src="../assets/me.png" layout="fill" objectFit="contain" />
       </div>
     </section>
     <div class="static h-[200vh]"></div>
