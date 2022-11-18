@@ -16,16 +16,12 @@
           <span class="block">Designer</span>
         </h1>
 
-        <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-10">
           <router-link
-            to="/contact"
-            class="relative flex items-center text-center h-10 w-30 transition-all duration-500 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:transition-all before:duration-300 before:opacity-100 before:hover:opacity-0 before:hover:scale-50 after:absolute after:top-0 after:left-0 after:w-full after:h-full after:opacity-0 after:transition-all after:duration-300 after:border after:border-violet-900 after:scale-125 after:hover:opacity-100 after:hover:scale-100"
+            to="/about"
+            class="link bg-gradient-to-r from-violet-900 to-pink-500 bg-clip-text text-transparent uppercase"
+            >Contact</router-link
           >
-            <span
-              class="relative p-5 uppercase bg-gradient-to-r from-violet-900 to-pink-500 bg-clip-text text-transparent font-bold"
-              >Contact</span
-            >
-          </router-link>
           <router-link to="/about" class="link">Learn More</router-link>
         </div>
       </div>
@@ -37,6 +33,14 @@
       </div>
     </section>
     <div class="static h-[200vh]"></div>
+    <div
+      class="fixed w-full flex items-center text-white justify-center z-40 h-20 top-[90vh] md:top-[95vh]"
+    >
+      <font-awesome-icon
+        icon="fa-solid fa-arrow-down"
+        class="bg-gradient-to-t w-5 h-5 from-violet-900 to-pink-500 rounded-full p-2 animate-bounce"
+      />
+    </div>
     <section
       class="relative z-40 -mt-[100vh] min-h-screen bg-black/80 backdrop-blur-md"
     >
