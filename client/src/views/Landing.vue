@@ -19,7 +19,7 @@
         <div class="flex items-center space-x-10">
           <router-link
             to="/contact"
-            class="link bg-gradient-to-r from-violet-900 to-pink-500 bg-clip-text text-transparent uppercase"
+            class="link animate-fast-pulse bg-gradient-to-r from-violet-900 to-pink-500 bg-clip-text text-transparent uppercase"
             >Contact</router-link
           >
           <button @click="goTo('info')" class="link uppercase">Details</button>
