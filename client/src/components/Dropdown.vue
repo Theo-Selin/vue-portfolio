@@ -50,7 +50,7 @@
               </MenuItem>
               <MenuItem v-slot="{ active }">
                 <a
-                  href="/portfolio"
+                  href="/experience"
                   :class="[
                     active
                       ? 'bg-gradient-to-r from-violet-600 to-pink-600 text-white'

@@ -20,7 +20,7 @@
 
 @layer components {
   #container {
-    @apply bg-gradient-to-t from-white to-[#E7ECEE] h-[200vh]
+    @apply bg-[#E7ECEE] scroll-smooth
   }
 
   .headerLink {
@@ -33,5 +33,9 @@
 
   .link {
     @apply px-2 relative cursor-pointer text-lg font-medium before:absolute before:inset-x-0 before:-bottom-1.5 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-gradient-to-r from-violet-900 to-pink-500 before:transition-all before:duration-200 hover:before:scale-x-100;
+  }
+
+  .arrow {
+    @apply bg-gradient-to-t w-5 h-5 from-violet-900 to-pink-500 opacity-80 rounded-full p-2 animate-bounce hover:cursor-pointer hover:opacity-100
   }
 }

@@ -10,15 +10,15 @@
           <span
             class="block bg-gradient-to-r from-violet-900 to-pink-500 bg-clip-text text-transparent"
           >
-            Creative
+            UI/UX
           </span>
-          <span class="block">Intelligent</span>
+          <span class="block">Backend</span>
           <span
             class="block bg-gradient-to-r from-violet-900 to-pink-500 bg-clip-text text-transparent"
           >
-            Ambitious
+            Frontend
           </span>
-          <span class="block">Colorful</span>
+          <span class="block">JavaScript</span>
         </h1>
 
         <div class="flex items-center space-x-4">
@@ -32,9 +32,9 @@
       </div>
 
       <div
-        class="relative h-[450] w-[450px] transition-all duration-500 md:inline lg:h-[800px] lg:w-[800px]"
+        class="relative h-[450px] w-[550px] transition-all duration-500 md:inline lg:h-[1000px] lg:w-[450px]"
       >
-        <img src="../assets/tiger.png" layout="fill" objectFit="contain" />
+        <img src="../assets/parrot.png" layout="fill" objectFit="contain" />
       </div>
     </section>
     <div class="static h-[200vh]"></div>

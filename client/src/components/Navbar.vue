@@ -21,7 +21,9 @@
       <div class="hidden flex-1 items-center justify-center space-x-8 md:flex">
         <router-link to="/" class="headerLink">Home</router-link>
         <router-link to="/about" class="headerLink">About</router-link>
-        <router-link to="/" class="headerLink">Portfolio</router-link>
+        <router-link to="/experience" class="headerLink"
+          >Experience</router-link
+        >
         <router-link to="/contact" class="headerLink">Contact</router-link>
       </div>
       <div class="flex justify-center md:w-1/5">
