@@ -8,13 +8,13 @@
           class="space-y-3 text-5xl font-semibold tracking-wide lg:text-7xl xl:text-7xl"
         >
           <span
-            class="block bg-gradient-to-r from-violet-900 to-pink-500 bg-clip-text text-transparent"
+            class="block bg-gradient-to-r from-yellow-500 to-red-600 bg-clip-text text-transparent"
           >
             Creative
           </span>
           <span class="block">Intelligent</span>
           <span
-            class="block bg-gradient-to-r from-violet-900 to-pink-500 bg-clip-text text-transparent"
+            class="block bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent"
           >
             Ambitious
           </span>
@@ -49,7 +49,7 @@
     </div>
     <section
       ref="info"
-      class="relative z-40 -mt-[100vh] min-h-screen bg-black/80 backdrop-blur-md"
+      class="relative z-40 -mt-[100vh] min-h-screen bg-[#E7ECEE]/50 backdrop-blur-xl"
     >
       <div class="space-y-10">
         <div class="flex flex-col">
@@ -64,12 +64,10 @@
               />
             </div>
             <div>
-              <h2
-                class="text-3xl font-bold tracking-tight text-white sm:text-4xl"
-              >
+              <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
                 Character Specifications
               </h2>
-              <p class="mt-4 text-gray-400">
+              <p class="mt-4 text-gray-600">
                 Theo Selin is an aspiring web developer who loves making static
                 sites come to life. He has years of experience with design and
                 have a knack for UI/UX from years of gaming and scrolling the
@@ -85,10 +83,10 @@
                 <div
                   v-for="feature in features"
                   :key="feature.name"
-                  class="border-t border-gray-200 pt-4"
+                  class="border-t border-gray-500 pt-4"
                 >
-                  <dt class="font-medium text-white">{{ feature.name }}</dt>
-                  <dd class="mt-2 text-sm text-gray-400">
+                  <dt class="font-semibold">{{ feature.name }}</dt>
+                  <dd class="mt-2 text-sm text-gray-600">
                     {{ feature.description }}
                   </dd>
                 </div>

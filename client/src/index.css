@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply font-body text-[#27282c];
+  }
+  
   /* For Webkit-based browsers (Chrome, Safari and Opera) */
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
@@ -23,8 +27,12 @@
     @apply bg-[#E7ECEE] scroll-smooth
   }
 
+  .block {
+    @apply m-0
+  }
+
   .headerLink {
-    @apply text-sm opacity-80 transition hover:opacity-100
+    @apply text-lg opacity-80 transition hover:opacity-100
   }
 
   .headerIcon {

@@ -8,13 +8,13 @@
           class="space-y-3 text-5xl font-semibold tracking-wide lg:text-7xl xl:text-7xl"
         >
           <span
-            class="block bg-gradient-to-r from-violet-900 to-pink-500 bg-clip-text text-transparent"
+            class="block bg-gradient-to-r from-yellow-400 to-red-600 bg-clip-text text-transparent"
           >
             UI/UX
           </span>
           <span class="block">Backend</span>
           <span
-            class="block bg-gradient-to-r from-violet-900 to-pink-500 bg-clip-text text-transparent"
+            class="block bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent"
           >
             Frontend
           </span>
