@@ -23,8 +23,8 @@
           >
             <div class="px-1 py-1">
               <MenuItem v-slot="{ active }">
-                <a
-                  href="/"
+                <router-link
+                  to="/"
                   :class="[
                     active
                       ? 'bg-gradient-to-r from-violet-600 to-pink-600 text-white'
@@ -33,11 +33,11 @@
                   ]"
                 >
                   Home
-                </a>
+                </router-link>
               </MenuItem>
               <MenuItem v-slot="{ active }">
-                <a
-                  href="/about"
+                <router-link
+                  to="/about"
                   :class="[
                     active
                       ? 'bg-gradient-to-r from-violet-600 to-pink-600 text-white'
@@ -46,11 +46,11 @@
                   ]"
                 >
                   About
-                </a>
+                </router-link>
               </MenuItem>
               <MenuItem v-slot="{ active }">
-                <a
-                  href="/experience"
+                <router-link
+                  to="/experience"
                   :class="[
                     active
                       ? 'bg-gradient-to-r from-violet-600 to-pink-600 text-white'
@@ -59,11 +59,11 @@
                   ]"
                 >
                   Experience
-                </a>
+                </router-link>
               </MenuItem>
               <MenuItem v-slot="{ active }">
-                <a
-                  href="/contact"
+                <router-link
+                  to="/contact"
                   :class="[
                     active
                       ? 'bg-gradient-to-r from-violet-600 to-pink-600 text-white'
@@ -72,7 +72,7 @@
                   ]"
                 >
                   Contact
-                </a>
+                </router-link>
               </MenuItem>
             </div>
           </MenuItems>
