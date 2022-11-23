@@ -48,6 +48,6 @@
   }
 
   .arrow {
-    @apply bg-gradient-to-t w-4 h-4 transition-all duration-300 from-violet-900 to-pink-500 opacity-80 rounded-full p-2 animate-bounce hover:cursor-pointer hover:opacity-100
+    @apply bg-gradient-to-t w-4 h-4 transition-all duration-300 from-violet-900 to-pink-500 opacity-80 rounded-full p-1.5 animate-bounce hover:cursor-pointer hover:opacity-100
   }
 }
