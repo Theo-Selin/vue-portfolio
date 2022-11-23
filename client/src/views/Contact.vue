@@ -4,7 +4,7 @@
       class="fixed left-0 right-0 top-10 mx-auto flex flex-col-reverse h-screen max-w-[1350px] items-center justify-evenly md:justify-center md:flex-row md:top-0"
     >
       <div
-        class="relative h-[450] w-[300px] transition-all duration-500 md:inline lg:h-[500px] lg:w-[500px]"
+        class="relative image h-[450] w-[300px] transition-all duration-500 md:inline lg:h-[500px] lg:w-[500px]"
       >
         <img src="../assets/elephants.png" layout="fill" objectFit="contain" />
       </div>
@@ -12,15 +12,15 @@
         <h1
           class="space-y-3 text-5xl font-semibold tracking-wide lg:text-7xl xl:text-7xl"
         >
-          <span class="block bg-pink-500 bg-clip-text text-transparent">
+          <span class="typography bg-pink-500 bg-clip-text text-transparent">
             I
           </span>
           <span
-            class="block uppercase bg-gradient-to-r from-pink-600 to-violet-500 bg-clip-text text-transparent"
+            class="typography uppercase bg-gradient-to-r from-pink-600 to-violet-500 bg-clip-text text-transparent"
             >Love</span
           >
           <span
-            class="block bg-gradient-to-r from-pink-500 to-red-600 bg-clip-text text-transparent"
+            class="typography bg-gradient-to-r from-pink-500 to-red-600 bg-clip-text text-transparent"
             >Contacts</span
           >
         </h1>

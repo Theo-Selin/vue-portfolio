@@ -4,21 +4,19 @@
       class="fixed mt-16 left-0 right-0 top-20 mx-auto flex flex-col h-screen max-w-[1350px] items-center justify-evenly md:flex-row md:top-0"
     >
       <div class="space-y-10">
-        <h1
-          class="space-y-3 text-5xl font-semibold tracking-wide lg:text-7xl xl:text-7xl"
-        >
+        <h1 class="space-y-3 text-5xl font-semibold lg:text-7xl xl:text-7xl">
           <span
-            class="block bg-gradient-to-r from-yellow-500 to-red-600 bg-clip-text text-transparent"
+            class="typography bg-gradient-to-r from-yellow-500 to-red-600 bg-clip-text text-transparent"
           >
             Creative
           </span>
-          <span class="block">Intelligent</span>
+          <span class="typography">Intelligent</span>
           <span
-            class="block bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent"
+            class="typography bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent"
           >
             Ambitious
           </span>
-          <span class="block">Colorful</span>
+          <span class="typography">Colorful</span>
         </h1>
 
         <div class="flex items-center space-x-4">
@@ -32,7 +30,7 @@
       </div>
 
       <div
-        class="relative h-[450] w-[450px] transition-all duration-500 md:inline lg:h-[800px] lg:w-[800px]"
+        class="relative image h-[450] w-[450px] md:inline lg:h-[800px] lg:w-[800px]"
       >
         <img src="../assets/tiger.png" layout="fill" objectFit="contain" />
       </div>
@@ -49,7 +47,7 @@
     </div>
     <section
       ref="info"
-      class="relative z-40 -mt-[100vh] min-h-screen bg-[#E7ECEE]/50 backdrop-blur-xl"
+      class="relative z-40 -mt-[100vh] min-h-screen bg-black/80 backdrop-blur-md"
     >
       <div class="space-y-10">
         <div class="flex flex-col">
@@ -64,10 +62,12 @@
               />
             </div>
             <div>
-              <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+              <h2
+                class="text-3xl font-medium tracking-tight text-gray-200 sm:text-4xl"
+              >
                 Character Specifications
               </h2>
-              <p class="mt-4 text-gray-600">
+              <p class="mt-4 text-gray-400">
                 Theo Selin is an aspiring web developer who loves making static
                 sites come to life. He has years of experience with design and
                 have a knack for UI/UX from years of gaming and scrolling the
@@ -83,10 +83,12 @@
                 <div
                   v-for="feature in features"
                   :key="feature.name"
-                  class="border-t border-gray-500 pt-4"
+                  class="border-t border-gray-600 pt-4"
                 >
-                  <dt class="font-semibold">{{ feature.name }}</dt>
-                  <dd class="mt-2 text-sm text-gray-600">
+                  <dt class="font-medium text-gray-200">
+                    {{ feature.name }}
+                  </dt>
+                  <dd class="mt-2 text-sm text-gray-400">
                     {{ feature.description }}
                   </dd>
                 </div>

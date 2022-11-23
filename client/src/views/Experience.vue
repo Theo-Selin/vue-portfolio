@@ -8,17 +8,17 @@
           class="space-y-3 text-5xl font-semibold tracking-wide lg:text-7xl xl:text-7xl"
         >
           <span
-            class="block bg-gradient-to-r from-yellow-400 to-red-600 bg-clip-text text-transparent"
+            class="typography bg-gradient-to-r from-yellow-400 to-red-600 bg-clip-text text-transparent"
           >
             UI/UX
           </span>
-          <span class="block">Backend</span>
+          <span class="typography">Backend</span>
           <span
-            class="block bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent"
+            class="typography bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent"
           >
             Frontend
           </span>
-          <span class="block">JavaScript</span>
+          <span class="typography">JavaScript</span>
         </h1>
 
         <div class="flex items-center space-x-4">
@@ -32,7 +32,7 @@
       </div>
 
       <div
-        class="relative h-[450px] w-[550px] transition-all duration-500 md:inline lg:h-[1000px] lg:w-[450px]"
+        class="relative image h-[450px] w-[550px] transition-all duration-500 md:inline lg:h-[1000px] lg:w-[450px]"
       >
         <img src="../assets/parrot.png" layout="fill" objectFit="contain" />
       </div>

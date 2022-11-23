@@ -27,8 +27,12 @@
     @apply bg-[#E7ECEE] scroll-smooth
   }
 
-  .block {
-    @apply m-0
+  .typography {
+    @apply block transition-all duration-300 cursor-default md:hover:transform md:hover:translate-x-2
+  }
+
+  .image {
+    @apply transition-all md:opacity-90 duration-700 md:hover:transform md:hover:scale-105 md:hover:opacity-100
   }
 
   .headerLink {
@@ -44,6 +48,6 @@
   }
 
   .arrow {
-    @apply bg-gradient-to-t w-5 h-5 from-violet-900 to-pink-500 opacity-80 rounded-full p-2 animate-bounce hover:cursor-pointer hover:opacity-100
+    @apply bg-gradient-to-t w-4 h-4 transition-all duration-300 from-violet-900 to-pink-500 opacity-80 rounded-full p-2 animate-bounce hover:cursor-pointer hover:opacity-100
   }
 }

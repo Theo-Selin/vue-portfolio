@@ -8,12 +8,12 @@
           class="space-y-3 text-5xl font-semibold tracking-wide lg:text-7xl xl:text-7xl"
         >
           <span
-            class="block bg-gradient-to-r from-violet-900 to-pink-500 bg-clip-text text-transparent"
+            class="typography bg-gradient-to-r from-violet-900 to-pink-500 bg-clip-text text-transparent"
           >
             Theo Selin
           </span>
-          <span class="block">Developer</span>
-          <span class="block">Designer</span>
+          <span class="typography">Developer</span>
+          <span class="typography">Designer</span>
         </h1>
 
         <div class="flex items-center space-x-10">
@@ -27,7 +27,7 @@
       </div>
 
       <div
-        class="relative h-[450px] w-full transition-all duration-500 md:inline lg:h-[800px] lg:w-[500px]"
+        class="relative image h-[450px] w-full transition-all duration-500 md:inline lg:h-[800px] lg:w-[500px]"
       >
         <img src="../assets/me.png" layout="fill" objectFit="contain" />
       </div>
