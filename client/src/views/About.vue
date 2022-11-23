@@ -1,7 +1,7 @@
 <template>
   <main>
     <section
-      class="fixed mt-10 left-0 right-0 top-20 mx-auto flex flex-col h-screen max-w-[1350px] items-center justify-evenly md:flex-row md:top-0"
+      class="fixed mt-16 left-0 right-0 top-20 mx-auto flex flex-col h-screen max-w-[1350px] items-center justify-evenly md:flex-row md:top-0"
     >
       <div class="space-y-10">
         <h1

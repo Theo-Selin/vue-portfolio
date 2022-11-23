@@ -12,18 +12,24 @@
         <h1
           class="space-y-3 text-5xl font-semibold tracking-wide lg:text-7xl xl:text-7xl"
         >
-          <span class="block bg-blue-600 bg-clip-text text-transparent">
+          <span class="block bg-pink-500 bg-clip-text text-transparent">
             I
           </span>
           <span
-            class="block uppercase bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent"
+            class="block uppercase bg-gradient-to-r from-pink-600 to-violet-500 bg-clip-text text-transparent"
             >Love</span
           >
           <span
-            class="block bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent"
+            class="block bg-gradient-to-r from-pink-500 to-red-600 bg-clip-text text-transparent"
             >Contacts</span
           >
         </h1>
+        <button
+          @click="goTo('form')"
+          class="link top-4 animate-fast-pulse uppercase bg-gradient-to-r from-violet-900 to-pink-500 bg-clip-text text-transparent"
+        >
+          Write something
+        </button>
       </div>
     </section>
     <div class="static h-[200vh]"></div>
