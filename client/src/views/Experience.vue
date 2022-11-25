@@ -8,13 +8,13 @@
           class="space-y-3 text-5xl font-semibold tracking-wide lg:text-7xl xl:text-7xl"
         >
           <span
-            class="typography bg-gradient-to-r from-yellow-400 to-red-600 bg-clip-text text-transparent"
+            class="typography tracking-widest bg-gradient-to-r from-yellow-400 to-red-600 bg-clip-text text-transparent"
           >
             UI/UX
           </span>
-          <span class="typography">Backend</span>
+          <span class="typography tracking-tight">Backend</span>
           <span
-            class="typography bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent"
+            class="typography tracking-wider bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent"
           >
             Frontend
           </span>

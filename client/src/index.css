@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply font-body text-[#27282c];
+    @apply font-body text-[#27282c] bg-[#E7ECEE] scroll-smooth;
   }
   
   /* For Webkit-based browsers (Chrome, Safari and Opera) */
@@ -23,10 +23,6 @@
 }
 
 @layer components {
-  #container {
-    @apply bg-[#E7ECEE] scroll-smooth
-  }
-
   .typography {
     @apply block transition-all duration-300 cursor-default md:hover:transform md:hover:translate-x-2
   }

@@ -5,70 +5,74 @@
       class="relative mx-auto items-center flex flex-col justify-center h-screen max-w-[1350px]"
     >
       <div
-        className="my-20 max-w-[650px] rounded-lg bg-white p-5 md:shadow-lg ring-1 ring-black ring-opacity-5"
+        className="my-20 max-w-[650px] rounded-lg bg-black/80 backdrop-blur-md p-5 md:shadow-lg ring-1 ring-black ring-opacity-5"
       >
         <h1
-          class="flex itemx-center justify-center uppercase font-medium text-lg pt-4"
+          class="flex justify-center text-1xl tracking-tight text-gray-300 sm:text-2xl"
         >
           Contact
         </h1>
         <form ref="form" @submit.prevent="sendEmail" className="py-6 md:px-9">
           <div className="mb-5">
-            <label className="mb-3 block text-base font-medium text-[#07074D]">
+            <label className="mb-3 block text-base font-medium text-gray-200">
               Name
               <input
                 type="text"
                 name="name"
-                placeholder="full name"
-                className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-violet-400 focus:shadow-md"
+                placeholder="Full name"
+                className="w-full rounded-md bg-white/5 py-3 px-6 text-base font-medium text-gray-400 outline-none focus:shadow-md"
               />
             </label>
           </div>
 
           <div className="mb-5">
-            <label className="mb-3 block text-base font-medium text-[#07074D]">
+            <label className="mb-3 block text-base font-medium text-gray-200">
               Email
               <input
                 type="email"
                 name="email"
-                placeholder="contact information"
-                className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-violet-400 focus:shadow-md"
+                placeholder="Contact information"
+                className="w-full rounded-md bg-white/5 py-3 px-6 text-base text-gray-400 outline-none focus:shadow-md"
               />
             </label>
           </div>
 
           <div className="mb-5">
-            <label className="mb-3 block text-base font-medium text-[#07074D]">
+            <label className="mb-3 block text-base font-medium text-gray-200">
               Company
               <input
                 type="text"
                 name="company"
-                placeholder="company name"
-                className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-violet-400 focus:shadow-md"
+                placeholder="Company name"
+                className="w-full rounded-md bg-white/5 py-3 px-6 text-base font-medium text-gray-400 outline-none focus:shadow-md"
               />
             </label>
           </div>
 
           <div className="mb-5">
-            <label className="mb-3 block text-base font-medium text-[#07074D]">
+            <label className="mb-3 block text-base font-medium text-gray-200">
               Message
               <textarea
                 name="message"
                 rows="6"
-                placeholder="what's on your mind?"
-                className="w-full resize-none overflow-hidden rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-violet-400 focus:shadow-md"
+                placeholder="What's on your mind?"
+                className="w-full resize-none overflow-hidden rounded-md bg-white/5 py-3 px-6 text-base font-medium text-gray-400 outline-none focus:shadow-md"
               />
             </label>
           </div>
 
           <div class="flex items-center space-x-20 justify-center">
-            <button @click="goTo('main')" type="button" class="link uppercase">
+            <button
+              @click="goTo('main')"
+              type="button"
+              class="link text-gray-400 text-md uppercase"
+            >
               Close
             </button>
             <button
               @click="showToast"
               type="submit"
-              class="link bg-gradient-to-r from-violet-900 to-pink-500 bg-clip-text text-transparent uppercase"
+              class="link text-gray-400 uppercase"
             >
               Send
             </button>

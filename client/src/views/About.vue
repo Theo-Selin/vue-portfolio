@@ -32,7 +32,7 @@
       </div>
 
       <div
-        class="relative image h-[450] w-[450px] md:inline lg:h-[800px] lg:w-[800px]"
+        class="relative image h-[450] w-[450px] md:inline lg:h-[800px] lg:w-[750px]"
       >
         <img src="../assets/tiger.png" layout="fill" objectFit="contain" />
       </div>

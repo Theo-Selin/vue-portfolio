@@ -19,7 +19,7 @@
         <div
           class="flex items-center justify-center space-x-4 md:justify-start"
         >
-          <button @click="goTo('info')" class="link uppercase">Details</button>
+          <router-link to="/about" class="link uppercase">About</router-link>
           <router-link
             to="/contact"
             class="link animate-fast-pulse bg-gradient-to-r from-violet-900 to-pink-500 bg-clip-text text-transparent uppercase"
@@ -32,24 +32,6 @@
         class="relative image h-[450px] w-full transition-all duration-500 md:inline lg:h-[800px] lg:w-[500px]"
       >
         <img src="../assets/me.png" layout="fill" objectFit="contain" />
-      </div>
-    </section>
-    <div class="static h-[200vh]"></div>
-    <div
-      class="fixed w-full flex items-center text-white justify-center z-40 h-20 top-[90vh] md:top-[95vh]"
-    >
-      <font-awesome-icon
-        @click="goTo('info')"
-        icon="fa-solid fa-arrow-down"
-        class="arrow"
-      />
-    </div>
-    <section
-      ref="info"
-      class="relative z-40 -mt-[100vh] min-h-screen bg-black/80 backdrop-blur-md"
-    >
-      <div class="space-y-10">
-        <div>Extra info</div>
       </div>
     </section>
   </main>
