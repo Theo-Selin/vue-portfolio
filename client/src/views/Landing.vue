@@ -16,13 +16,15 @@
           <span class="typography">Designer</span>
         </h1>
 
-        <div class="flex items-center space-x-10">
+        <div
+          class="flex items-center justify-center space-x-4 md:justify-start"
+        >
+          <button @click="goTo('info')" class="link uppercase">Details</button>
           <router-link
             to="/contact"
             class="link animate-fast-pulse bg-gradient-to-r from-violet-900 to-pink-500 bg-clip-text text-transparent uppercase"
             >Contact</router-link
           >
-          <button @click="goTo('info')" class="link uppercase">Details</button>
         </div>
       </div>
 

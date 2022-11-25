@@ -6,26 +6,28 @@
       <div class="space-y-10">
         <h1 class="space-y-3 text-5xl font-semibold lg:text-7xl xl:text-7xl">
           <span
-            class="typography bg-gradient-to-r from-yellow-500 to-red-600 bg-clip-text text-transparent"
+            class="typography tracking-wider bg-gradient-to-r from-yellow-500 to-red-600 bg-clip-text text-transparent"
           >
             Creative
           </span>
-          <span class="typography">Intelligent</span>
+          <span class="typography tracking-tighter">Rhetorical</span>
           <span
-            class="typography bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent"
+            class="typography tracking-tighter bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent"
           >
             Ambitious
           </span>
-          <span class="typography">Colorful</span>
+          <span class="typography tracking-widest">Colorful</span>
         </h1>
 
-        <div class="flex items-center space-x-4">
+        <div
+          class="flex items-center justify-center space-x-4 md:justify-start"
+        >
+          <button @click="goTo('info')" class="link uppercase">Details</button>
           <router-link
             to="/contact"
             class="link animate-fast-pulse uppercase bg-gradient-to-r from-violet-900 to-pink-500 bg-clip-text text-transparent"
             >Contact</router-link
           >
-          <button @click="goTo('info')" class="link uppercase">Details</button>
         </div>
       </div>
 
@@ -47,16 +49,16 @@
     </div>
     <section
       ref="info"
-      class="relative z-40 -mt-[100vh] min-h-screen bg-black/80 backdrop-blur-md"
+      class="relative flex items-center justify-center z-40 -mt-[100vh] min-h-screen bg-black/80 backdrop-blur-md"
     >
       <div class="space-y-10">
         <div class="flex flex-col">
           <div
-            class="my-24 mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 py-24 px-4 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8"
+            class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 py-24 px-4 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8"
           >
             <div>
               <img
-                src="../assets/idle.gif"
+                src="../assets/anatomy.png"
                 alt="pixel gif of person"
                 class="w-full"
               />
@@ -78,7 +80,7 @@
               </p>
 
               <dl
-                class="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8"
+                class="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-10 lg:gap-x-8"
               >
                 <div
                   v-for="feature in features"

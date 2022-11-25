@@ -21,13 +21,15 @@
           <span class="typography">JavaScript</span>
         </h1>
 
-        <div class="flex items-center space-x-4">
+        <div
+          class="flex items-center justify-center space-x-4 md:justify-start"
+        >
+          <button @click="goTo('info')" class="link uppercase">Details</button>
           <router-link
             to="/contact"
             class="link animate-fast-pulse uppercase bg-gradient-to-r from-violet-900 to-pink-500 bg-clip-text text-transparent"
             >Contact</router-link
           >
-          <button @click="goTo('info')" class="link uppercase">Details</button>
         </div>
       </div>
 
@@ -49,45 +51,47 @@
     </div>
     <section
       ref="info"
-      class="relative z-40 -mt-[100vh] min-h-screen bg-black/80 backdrop-blur-md"
+      class="relative flex items-center justify-center z-40 -mt-[100vh] min-h-screen bg-black/80 backdrop-blur-md"
     >
       <div class="space-y-10">
         <div class="flex flex-col">
           <div
-            class="my-24 mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 py-24 px-4 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8"
+            class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 py-24 px-4 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8"
           >
-            <div>
+            <div
+              class="grid items-center grid-cols-1 grid-rows-2 gap-4 sm:gap-6 lg:gap-8"
+            >
               <img
-                src="../assets/idle.gif"
-                alt="pixel gif of person"
-                class="w-full"
+                src="../assets/infocaption.png"
+                alt="infocaption logo"
+                class="w-1/2 mx-auto"
+              />
+              <img
+                src="../assets/nackademin.png"
+                alt="nackademin logo"
+                class="w-1/2 mx-auto"
+              />
+              <img src="../assets/dozer.png" alt="dozer logo" class="mx-auto" />
+              <img
+                src="../assets/elgiganten.png"
+                alt="elgiganten logo"
+                class="w-1/2 mx-auto"
               />
             </div>
             <div>
               <h2
-                class="text-3xl font-bold tracking-tight text-white sm:text-4xl"
+                class="flex justify-center text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl"
               >
-                Character Specifications
+                Experience
               </h2>
-              <p class="mt-4 text-gray-400">
-                Theo Selin is an aspiring web developer who loves making static
-                sites come to life. He has years of experience with design and
-                have a knack for UI/UX from years of gaming and scrolling the
-                web. He grew up in the technical world and can easily tell when
-                something doesn't "feel" right and he loves to create and birth
-                new exciting experiences for the users. Click around or contact
-                him to learn more. He's a talker!
-              </p>
 
-              <dl
-                class="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8"
-              >
+              <dl class="mt-16 grid grid-cols-1 gap-y-10 sm:gap-y-8 lg:gap-x-8">
                 <div
                   v-for="feature in features"
                   :key="feature.name"
                   class="border-t border-gray-200 pt-4"
                 >
-                  <dt class="font-medium text-white">{{ feature.name }}</dt>
+                  <dt class="font-medium text-gray-200">{{ feature.name }}</dt>
                   <dd class="mt-2 text-sm text-gray-400">
                     {{ feature.description }}
                   </dd>
@@ -104,34 +108,24 @@
 <script>
 const features = [
   {
-    name: "Origin",
+    name: "InfoCaption",
     description:
-      "Grew up in Delsbo, Hälsingland, with his mother and three siblings. They lived in a house that required chopped wood for warmth.",
+      "I'm currently an intern at InfoCaption where I learn how to work agile as a team and where I get the chance to polish my technical skills.",
   },
   {
-    name: "Location",
+    name: "Nackademin",
     description:
-      "Moved to his father in Solna after school and worked his way to his current situation in Hallonbergen, Stockholm",
+      "Studied Full-Stack developer at Nackademin with top grades in most categories. I found that Frontend was appealing to me because of my history with design.",
   },
   {
-    name: "Life",
+    name: "Dozer",
     description:
-      "30yrs, 180cm, 65kg. Worked in retail to find steady ground before moving to IT. He then moved on to Web Development to dive deeper into IT.",
+      "Worked as a technical consult for smaller companies and startups like Doktor.se and Storytell. I found my interest in Web development when I created a boarding-system for Doktor.se.",
   },
   {
-    name: "Skill",
+    name: "Elgiganten",
     description:
-      "ReactJS, VueJS, Express, MongoDB, NextJS, NuxtJS, Adobe, PowerApps, Office",
-  },
-  {
-    name: "Talent",
-    description:
-      "UI/UX, Graphic Design, Gaming, People, Motivation, Learning, Pedagogical.",
-  },
-  {
-    name: "Considerations",
-    description:
-      "He's lovable and fun to be around. His mother is emotionally intelligent and his father has the spirit of an entrepreneur.",
+      "Started in the warehouse and worked my way up the ladder until I was warehouse & aftersales manager in Bromma. I moved on because I wanted to work in IT.",
   },
 ];
 export default {

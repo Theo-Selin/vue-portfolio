@@ -8,7 +8,7 @@
       >
         <img src="../assets/elephants.png" layout="fill" objectFit="contain" />
       </div>
-      <div>
+      <div class="flex flex-col justify-center">
         <h1
           class="space-y-3 text-5xl font-semibold tracking-wide lg:text-7xl xl:text-7xl"
         >
@@ -24,12 +24,14 @@
             >Contacts</span
           >
         </h1>
-        <button
-          @click="goTo('form')"
-          class="link top-4 animate-fast-pulse uppercase bg-gradient-to-r from-violet-900 to-pink-500 bg-clip-text text-transparent"
-        >
-          Write something
-        </button>
+        <div class="flex justify-center">
+          <button
+            @click="goTo('form')"
+            class="link top-4 animate-fast-pulse uppercase bg-gradient-to-r from-violet-900 to-pink-500 bg-clip-text text-transparent"
+          >
+            Write something
+          </button>
+        </div>
       </div>
     </section>
     <div class="static h-[200vh]"></div>

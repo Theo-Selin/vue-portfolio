@@ -62,15 +62,15 @@
           </div>
 
           <div class="flex items-center space-x-20 justify-center">
+            <button @click="goTo('main')" type="button" class="link uppercase">
+              Close
+            </button>
             <button
               @click="showToast"
               type="submit"
               class="link bg-gradient-to-r from-violet-900 to-pink-500 bg-clip-text text-transparent uppercase"
             >
               Send
-            </button>
-            <button @click="goTo('main')" type="button" class="link uppercase">
-              Close
             </button>
           </div>
         </form>
